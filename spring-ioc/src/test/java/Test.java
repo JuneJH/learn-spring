@@ -1,3 +1,4 @@
+import com.june.learn.ConstructorArg;
 import com.june.learn.Hello;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -11,5 +12,9 @@ public class Test {
         ApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
         Hello h2 = (Hello) app.getBean("hello");
         h2.sayHello();
+
+        System.out.println("====构造函数注入=======");
+        ConstructorArg ca = (ConstructorArg)app.getBean("ConstructorArg");
+        ca.sayHello();
     }
 }
