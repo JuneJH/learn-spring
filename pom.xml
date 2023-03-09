@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-ioc</module>
+        <module>spring-aop</module>
     </modules>
 
     <properties>
@@ -21,6 +22,12 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>5.2.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.4</version>
         </dependency>
     </dependencies>
 
