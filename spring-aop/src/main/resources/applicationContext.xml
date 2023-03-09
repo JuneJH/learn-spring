@@ -13,9 +13,21 @@
     <bean id="log" class="com.june.common.Log"></bean>
     <bean id="afterLog" class="com.june.common.AfterLog"></bean>
 
+    <bean id="hook" class="com.june.common.Hook"></bean>
+
     <aop:config>
         <aop:pointcut id="pointcut" expression="execution(* com.june.service.UserServiceImpl.* (..))"/>
         <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
         <aop:advisor advice-ref="afterLog" pointcut-ref="pointcut"/>
     </aop:config>
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.june.service.UserServiceImpl.* (..))"/>
+        <aop:aspect id="hook" ref="hook">
+            <aop:before method="before" pointcut-ref="pointcut"/>
+            <aop:after method="after" pointcut-ref="pointcut"/>
+        </aop:aspect>
+
+    </aop:config>
+
+
 </beans>
