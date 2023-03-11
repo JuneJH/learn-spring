@@ -10,7 +10,7 @@ public class Hello extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getSession().setAttribute("msg","执行了方法");
-        req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(req,resp);
+        req.getRequestDispatcher("/index.jsp").forward(req,resp);
     }
 
     @Override
