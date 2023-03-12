@@ -12,6 +12,7 @@
         <module>spring-ioc</module>
         <module>spring-aop</module>
         <module>servlet</module>
+        <module>spring-mvc</module>
     </modules>
 
     <properties>

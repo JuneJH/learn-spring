@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-aop" />
+        <module name="spring-mvc" />
         <module name="spring-ioc" />
         <module name="servlet" />
-        <module name="spring-aop" />
       </profile>
     </annotationProcessing>
   </component>
