@@ -11,6 +11,6 @@
     <title>测试注解方式</title>
 </head>
 <body>
-hello annotation！！！！
+hello annotation！！！！${msg}
 </body>
 </html>
