@@ -11,6 +11,7 @@
         <module name="spring-mvc" />
         <module name="spring-ioc" />
         <module name="servlet" />
+        <module name="springboot" />
       </profile>
     </annotationProcessing>
   </component>
