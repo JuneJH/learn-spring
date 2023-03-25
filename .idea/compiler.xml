@@ -7,12 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-mvc-annotation" />
-        <module name="spring-aop" />
+        <module name="my-spring" />
         <module name="spring-mvc" />
+        <module name="spring-aop" />
         <module name="spring-ioc" />
         <module name="servlet" />
-        <module name="springboot" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot" options="-parameters" />
+    </option>
   </component>
 </project>
