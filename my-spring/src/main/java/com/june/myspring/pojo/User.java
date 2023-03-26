@@ -1,11 +1,14 @@
 package com.june.myspring.pojo;
 
 public class User {
+    private Integer id;
     private String name;
     private Integer age;
     private Integer sex;
     private String description;
+    public User(){
 
+    }
     public User(String name, Integer age, Integer sex, String description) {
         this.name = name;
         this.age = age;
@@ -21,6 +24,14 @@ public class User {
                 ", sex=" + sex +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setName(String name) {

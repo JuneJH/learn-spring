@@ -4,6 +4,5 @@ public class Test {
         System.out.println("hell test!!!");
         com.june.myspring.test.Test test = new com.june.myspring.test.Test();
         test.test();
-
     }
 }
