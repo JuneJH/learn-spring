@@ -45,8 +45,6 @@ public class UserDaoImpl implements UserDao{
                     field.set(result,resultSet.getObject(i + 1));
                 }
                 results.add(result);
-
-
             }
             return  results;
 
